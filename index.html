@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Юлия Мамасуева - финансовый консультант</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #faf8f3;
+            font-family: "Comic Sans MS", "Comic Sans", cursive;
+            font-size: 1.1rem;
+            line-height: 1.6;
+            color: #333;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: #faf8f3;
+        }
+
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 0;
+            margin-top: 0;
+            font-size: 2.5rem;
+        }
+
+        h2 {
+            color: #2c3e50;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            font-size: 2rem;
+        }
+
+        h3 {
+            color: #2c3e50;
+            margin-top: 1.5rem;
+            margin-bottom: 0.5rem;
+            font-size: 1.5rem;
+        }
+
+        .quote-block {
+            background-color: #ffffff;
+            border-left: 4px solid #2c3e50;
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 5px;
+            font-style: italic;
+            font-size: 1.1rem;
+            color: #2c3e50;
+        }
+
+        .quote-author {
+            text-align: right;
+            margin-top: 0.5rem;
+            font-size: 0.9rem;
+            font-style: normal;
+            color: #555;
+        }
+
+        .header-section {
+            display: flex;
+            gap: 2rem;
+            align-items: flex-start;
+            margin: 2rem 0;
+        }
+
+        .photo-container {
+            flex: 0 0 300px;
+        }
+
+        .photo-container img {
+            width: 100%;
+            max-width: 300px;
+            height: auto;
+            border-radius: 5px;
+            display: block;
+        }
+
+        .title-container {
+            flex: 1;
+        }
+
+        p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin-bottom: 1rem;
+        }
+
+        ul, ol {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-left: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        li {
+            margin-bottom: 0.5rem;
+        }
+
+        .contact-email {
+            font-size: 1.2rem;
+            color: #2c3e50;
+            font-weight: 600;
+        }
+
+        .section {
+            margin-bottom: 2rem;
+        }
+
+        .highlight-photo {
+            margin: 2rem auto;
+            text-align: center;
+        }
+
+        .highlight-photo img {
+            width: 100%;
+            max-width: 520px;
+            border-radius: 8px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+        }
+
+        .highlight-photo .photo-note {
+            margin-top: 0.75rem;
+            font-size: 1rem;
+            color: #4d4d4d;
+        }
+
+        .photo-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            justify-content: center;
+            margin: 0 auto 2.5rem;
+        }
+
+        .photo-gallery figure {
+            flex: 1 1 280px;
+            max-width: 360px;
+            text-align: center;
+        }
+
+        .photo-gallery img {
+            width: 100%;
+            height: 220px;
+            border-radius: 8px;
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+            object-fit: cover;
+            object-position: center;
+        }
+
+        .photo-gallery figcaption {
+            margin-top: 0.75rem;
+            font-size: 1rem;
+            color: #4d4d4d;
+        }
+
+        @media (max-width: 768px) {
+            .header-section {
+                flex-direction: column;
+            }
+
+            .photo-container {
+                flex: 0 0 auto;
+                width: 100%;
+            }
+
+            h1 {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Цитата -->
+        <div class="quote-block">
+            «Богатство приносят не те деньги, которые вы зарабатываете, а те, которые сохраняете»
+            <div class="quote-author">— Бодо Шефер «Путь к финансовой свободе»</div>
+        </div>
+
+        <!-- Заголовок и фото в одной строке -->
+        <div class="header-section">
+            <div class="photo-container">
+                <img src="photo_2021.jpg" alt="Юлия Мамасуева" onerror="this.src='photo.jpg'; this.onerror=null;">
+            </div>
+            <div class="title-container">
+                <h1>Юлия Мамасуева - независимый финансовый консультант</h1>
+            </div>
+        </div>
+
+        <!-- Основной контент -->
+        <div class="section">
+            <h2>Приветствую Вас!</h2>
+            <p>Если Вы находитесь на этой странице, значит у Вас есть нерешенный финансовый вопрос и я готова помочь с ним разобраться.</p>
+            <p>Помощь профессионала в сфере финансов и инвестиций - верный путь для оздоровления Ваших личных финансов, безопасного инвестирования и увеличения благосостояния. Большинство людей не задумываются о своих финансах, о необходимости правильного распределения бюджета и инвестировании для достижения целей. По статистике 90% частных инвесторов получают убытки, не имея чёткого плана и стратегии, действуют импульсивно, по бесплатным советам брокера или блогеров.</p>
+            <p>Готова помочь Вам разобраться с личными финансами, правильно поставить финансовые цели, составить личный финансовый план, научу правильно и безопасно инвестировать, буду Вашим персональным инвестиционным консультантом.</p>
+        </div>
+
+        <div class="section">
+            <h2>Обо мне</h2>
+            <p>Более 20 лет успешной работы в банковской сфере в качестве руководителя аналитических подразделений крупнейших системообразующих банков. Частный квалифицированный инвестор с более чем 10-летним стажем успешного управления инвестиционным портфелем. Значительный опыт методологической работы, преподавания математических и финансовых дисциплин. Автор курсов по финансовой грамотности и основам инвестирования для различных целевых аудиторий.</p>
+            <p>Я помогаю людям достичь финансовой свободы и стабильности. Моя миссия - дать вам инструменты и знания для управления личными финансами.</p>
+        </div>
+
+        <div class="section">
+            <h2>Образование</h2>
+            <p>Совет по профессиональным квалификациям финансового рынка – квалификация Финансовый консультант</p>
+            <p>Институт ДПО «Международный финансовый центр» – финансовый консультант</p>
+            <p>Московский государственный университет им. М.В.Ломоносова, механико-математический факультет - ученая степень кандидата физико-математических наук </p>
+            <p>Академия народного хозяйства при Правительстве РФ, Российско-немецкая высшая школа управления - МВА «Экономика и управление предприятием»</p>
+            <p>Ассоциация бухгалтеров и аудиторов Содружества при МГУ – бухгалтер</p>
+            <p>«Оценка инвестиционных проектов» (Ernst & Young)</p>
+            <p>«Финансовый анализ для кредитных аналитиков» (Ernst & Young)</p>
+            <p>«Финансовое моделирование и прогнозирование» (Ernst & Young)</p>
+        </div>
+
+        <div class="photo-gallery">
+            <figure>
+                <img src="photo_1_2025-11-24_14-08-45.jpg" alt="Юлия Мамасуева проводит лекцию">
+                <figcaption>Лекция по финансовой грамотности</figcaption>
+            </figure>
+            <figure>
+                <img src="3_2025-03-26.jpg" alt="Юлия Мамасуева ведет консультацию">
+                <figcaption>На консультации по финансовому планированию</figcaption>
+            </figure>
+            <figure>
+                <img src="1_2025-03-26.jpg" alt="Юлия Мамасуева во время консультации с клиентами">
+                <figcaption>Живое обсуждение финансовых стратегий с клиентами</figcaption>
+            </figure>
+        </div>
+
+        <div class="section">
+            <h2>Услуги</h2>
+            <h3>Объясню:</h3>
+            <ul>
+                <li>как начать копить, даже если не из чего</li>
+                <li>как избавиться от долгов</li>
+                <li>как найти дополнительные источники дохода</li>
+                <li>какие расходы можно секвестировать без потери жизненного комфорта.</li>
+            </ul>
+
+            <h3>Помогу:</h3>
+            <ul>
+                <li>составить личный финансовый план, основанный на Вашем бюджете, в соответствии с Вашими целями и сроками</li>
+                <li>определить чёткие выполнимые финансовые цели</li>
+                <li>выработать комплексную финансовую стратегию</li>
+                <li>правильно инвестировать свободные денежные средства.</li>
+            </ul>
+
+            <h3>ВАЖНО:</h3>
+            <ul>
+                <li>если Вам обещают гарантированный доход в любых инвестициях, кроме банковского вклада, или высокий процент доходности, проконсультируйтесь у независимого финансового консультанта!</li>
+                <li>я не продаю и не рекламирую продукты и услуги банков, брокерских компаний, страховых или пенсионных фондов!</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Хочешь быть финансово независимым — будь им!</h2>
+        </div>
+
+        <div class="section">
+            <h2>Контакты</h2>
+            <p class="contact-email">5355995@gmail.com</p>
+            <p class="contact-email">@iuliiamamapchelka</p>
+        </div>
+    </div>
+</body>
+</html>
+
